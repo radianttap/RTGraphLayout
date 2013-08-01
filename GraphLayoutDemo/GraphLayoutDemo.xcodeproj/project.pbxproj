@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D068865517AA60CF002EC90A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068865417AA60CF002EC90A /* UIKit.framework */; };
+		D068865717AA60CF002EC90A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068865617AA60CF002EC90A /* Foundation.framework */; };
+		D068865917AA60CF002EC90A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068865817AA60CF002EC90A /* CoreGraphics.framework */; };
+		D068865F17AA60CF002EC90A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D068865D17AA60CF002EC90A /* InfoPlist.strings */; };
+		D068866117AA60CF002EC90A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D068866017AA60CF002EC90A /* main.m */; };
+		D068866517AA60CF002EC90A /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D068866417AA60CF002EC90A /* RTAppDelegate.m */; };
+		D068866717AA60CF002EC90A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D068866617AA60CF002EC90A /* Default.png */; };
+		D068866917AA60CF002EC90A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068866817AA60CF002EC90A /* Default@2x.png */; };
+		D068866B17AA60CF002EC90A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068866A17AA60CF002EC90A /* Default-568h@2x.png */; };
+		D068866E17AA60CF002EC90A /* RTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068866D17AA60CF002EC90A /* RTViewController.m */; };
+		D068867117AA60CF002EC90A /* RTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D068866F17AA60CF002EC90A /* RTViewController.xib */; };
+		D068868817AA6114002EC90A /* axis-h-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867917AA6114002EC90A /* axis-h-arrow.png */; };
+		D068868917AA6114002EC90A /* axis-h-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867A17AA6114002EC90A /* axis-h-arrow@2x.png */; };
+		D068868A17AA6114002EC90A /* axis-v-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867B17AA6114002EC90A /* axis-v-arrow.png */; };
+		D068868B17AA6114002EC90A /* axis-v-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867C17AA6114002EC90A /* axis-v-arrow@2x.png */; };
+		D068868C17AA6114002EC90A /* dotted-h-line.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867D17AA6114002EC90A /* dotted-h-line.png */; };
+		D068868D17AA6114002EC90A /* dotted-h-line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867E17AA6114002EC90A /* dotted-h-line@2x.png */; };
+		D068868E17AA6114002EC90A /* dotted-v-line.png in Resources */ = {isa = PBXBuildFile; fileRef = D068867F17AA6114002EC90A /* dotted-v-line.png */; };
+		D068868F17AA6114002EC90A /* dotted-v-line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D068868017AA6114002EC90A /* dotted-v-line@2x.png */; };
+		D068869017AA6114002EC90A /* RTGraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D068868217AA6114002EC90A /* RTGraphCell.m */; };
+		D068869117AA6114002EC90A /* RTGraphLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D068868417AA6114002EC90A /* RTGraphLayout.m */; };
+		D068869217AA6114002EC90A /* RTGraphLayoutAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = D068868617AA6114002EC90A /* RTGraphLayoutAxis.m */; };
+		D068869317AA6114002EC90A /* RTGraphLayoutAxis.xib in Resources */ = {isa = PBXBuildFile; fileRef = D068868717AA6114002EC90A /* RTGraphLayoutAxis.xib */; };
+		D068869817AA62D9002EC90A /* TimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D068869717AA62D9002EC90A /* TimeFormatter.m */; };
+		D068869B17AA6706002EC90A /* RTActivityPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = D068869A17AA6706002EC90A /* RTActivityPoint.m */; };
+		D068869D17AA681C002EC90A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D068869C17AA681C002EC90A /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D068865117AA60CF002EC90A /* GraphLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D068865417AA60CF002EC90A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D068865617AA60CF002EC90A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D068865817AA60CF002EC90A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D068865C17AA60CF002EC90A /* GraphLayoutDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphLayoutDemo-Info.plist"; sourceTree = "<group>"; };
+		D068865E17AA60CF002EC90A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D068866017AA60CF002EC90A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D068866217AA60CF002EC90A /* GraphLayoutDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphLayoutDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D068866317AA60CF002EC90A /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		D068866417AA60CF002EC90A /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		D068866617AA60CF002EC90A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D068866817AA60CF002EC90A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D068866A17AA60CF002EC90A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D068866C17AA60CF002EC90A /* RTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
+		D068866D17AA60CF002EC90A /* RTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
+		D068867017AA60CF002EC90A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RTViewController.xib; sourceTree = "<group>"; };
+		D068867917AA6114002EC90A /* axis-h-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "axis-h-arrow.png"; sourceTree = "<group>"; };
+		D068867A17AA6114002EC90A /* axis-h-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "axis-h-arrow@2x.png"; sourceTree = "<group>"; };
+		D068867B17AA6114002EC90A /* axis-v-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "axis-v-arrow.png"; sourceTree = "<group>"; };
+		D068867C17AA6114002EC90A /* axis-v-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "axis-v-arrow@2x.png"; sourceTree = "<group>"; };
+		D068867D17AA6114002EC90A /* dotted-h-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotted-h-line.png"; sourceTree = "<group>"; };
+		D068867E17AA6114002EC90A /* dotted-h-line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotted-h-line@2x.png"; sourceTree = "<group>"; };
+		D068867F17AA6114002EC90A /* dotted-v-line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotted-v-line.png"; sourceTree = "<group>"; };
+		D068868017AA6114002EC90A /* dotted-v-line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotted-v-line@2x.png"; sourceTree = "<group>"; };
+		D068868117AA6114002EC90A /* RTGraphCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGraphCell.h; sourceTree = "<group>"; };
+		D068868217AA6114002EC90A /* RTGraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGraphCell.m; sourceTree = "<group>"; };
+		D068868317AA6114002EC90A /* RTGraphLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGraphLayout.h; sourceTree = "<group>"; };
+		D068868417AA6114002EC90A /* RTGraphLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGraphLayout.m; sourceTree = "<group>"; };
+		D068868517AA6114002EC90A /* RTGraphLayoutAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTGraphLayoutAxis.h; sourceTree = "<group>"; };
+		D068868617AA6114002EC90A /* RTGraphLayoutAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTGraphLayoutAxis.m; sourceTree = "<group>"; };
+		D068868717AA6114002EC90A /* RTGraphLayoutAxis.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTGraphLayoutAxis.xib; sourceTree = "<group>"; };
+		D068869617AA62D9002EC90A /* TimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormatter.h; sourceTree = "<group>"; };
+		D068869717AA62D9002EC90A /* TimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFormatter.m; sourceTree = "<group>"; };
+		D068869917AA6706002EC90A /* RTActivityPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTActivityPoint.h; sourceTree = "<group>"; };
+		D068869A17AA6706002EC90A /* RTActivityPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTActivityPoint.m; sourceTree = "<group>"; };
+		D068869C17AA681C002EC90A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D068864E17AA60CF002EC90A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068869D17AA681C002EC90A /* QuartzCore.framework in Frameworks */,
+				D068865517AA60CF002EC90A /* UIKit.framework in Frameworks */,
+				D068865717AA60CF002EC90A /* Foundation.framework in Frameworks */,
+				D068865917AA60CF002EC90A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D068864817AA60CF002EC90A = {
+			isa = PBXGroup;
+			children = (
+				D068869417AA62D9002EC90A /* Vendor */,
+				D068867717AA6114002EC90A /* RTGraphLayout */,
+				D068865A17AA60CF002EC90A /* GraphLayoutDemo */,
+				D068865317AA60CF002EC90A /* Frameworks */,
+				D068865217AA60CF002EC90A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D068865217AA60CF002EC90A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D068865117AA60CF002EC90A /* GraphLayoutDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D068865317AA60CF002EC90A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D068869C17AA681C002EC90A /* QuartzCore.framework */,
+				D068865417AA60CF002EC90A /* UIKit.framework */,
+				D068865617AA60CF002EC90A /* Foundation.framework */,
+				D068865817AA60CF002EC90A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D068865A17AA60CF002EC90A /* GraphLayoutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D068866317AA60CF002EC90A /* RTAppDelegate.h */,
+				D068866417AA60CF002EC90A /* RTAppDelegate.m */,
+				D068866C17AA60CF002EC90A /* RTViewController.h */,
+				D068866D17AA60CF002EC90A /* RTViewController.m */,
+				D068866F17AA60CF002EC90A /* RTViewController.xib */,
+				D068865B17AA60CF002EC90A /* Supporting Files */,
+				D068869917AA6706002EC90A /* RTActivityPoint.h */,
+				D068869A17AA6706002EC90A /* RTActivityPoint.m */,
+			);
+			path = GraphLayoutDemo;
+			sourceTree = "<group>";
+		};
+		D068865B17AA60CF002EC90A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D068865C17AA60CF002EC90A /* GraphLayoutDemo-Info.plist */,
+				D068865D17AA60CF002EC90A /* InfoPlist.strings */,
+				D068866017AA60CF002EC90A /* main.m */,
+				D068866217AA60CF002EC90A /* GraphLayoutDemo-Prefix.pch */,
+				D068866617AA60CF002EC90A /* Default.png */,
+				D068866817AA60CF002EC90A /* Default@2x.png */,
+				D068866A17AA60CF002EC90A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D068867717AA6114002EC90A /* RTGraphLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D068867817AA6114002EC90A /* graphimages */,
+				D068868117AA6114002EC90A /* RTGraphCell.h */,
+				D068868217AA6114002EC90A /* RTGraphCell.m */,
+				D068868317AA6114002EC90A /* RTGraphLayout.h */,
+				D068868417AA6114002EC90A /* RTGraphLayout.m */,
+				D068868517AA6114002EC90A /* RTGraphLayoutAxis.h */,
+				D068868617AA6114002EC90A /* RTGraphLayoutAxis.m */,
+				D068868717AA6114002EC90A /* RTGraphLayoutAxis.xib */,
+			);
+			name = RTGraphLayout;
+			path = ../RTGraphLayout;
+			sourceTree = "<group>";
+		};
+		D068867817AA6114002EC90A /* graphimages */ = {
+			isa = PBXGroup;
+			children = (
+				D068867917AA6114002EC90A /* axis-h-arrow.png */,
+				D068867A17AA6114002EC90A /* axis-h-arrow@2x.png */,
+				D068867B17AA6114002EC90A /* axis-v-arrow.png */,
+				D068867C17AA6114002EC90A /* axis-v-arrow@2x.png */,
+				D068867D17AA6114002EC90A /* dotted-h-line.png */,
+				D068867E17AA6114002EC90A /* dotted-h-line@2x.png */,
+				D068867F17AA6114002EC90A /* dotted-v-line.png */,
+				D068868017AA6114002EC90A /* dotted-v-line@2x.png */,
+			);
+			path = graphimages;
+			sourceTree = "<group>";
+		};
+		D068869417AA62D9002EC90A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D068869517AA62D9002EC90A /* TimeFormatter */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		D068869517AA62D9002EC90A /* TimeFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				D068869617AA62D9002EC90A /* TimeFormatter.h */,
+				D068869717AA62D9002EC90A /* TimeFormatter.m */,
+			);
+			path = TimeFormatter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D068865017AA60CF002EC90A /* GraphLayoutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D068867417AA60CF002EC90A /* Build configuration list for PBXNativeTarget "GraphLayoutDemo" */;
+			buildPhases = (
+				D068864D17AA60CF002EC90A /* Sources */,
+				D068864E17AA60CF002EC90A /* Frameworks */,
+				D068864F17AA60CF002EC90A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GraphLayoutDemo;
+			productName = GraphLayoutDemo;
+			productReference = D068865117AA60CF002EC90A /* GraphLayoutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D068864917AA60CF002EC90A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Radiant Tap";
+			};
+			buildConfigurationList = D068864C17AA60CF002EC90A /* Build configuration list for PBXProject "GraphLayoutDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D068864817AA60CF002EC90A;
+			productRefGroup = D068865217AA60CF002EC90A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D068865017AA60CF002EC90A /* GraphLayoutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D068864F17AA60CF002EC90A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068865F17AA60CF002EC90A /* InfoPlist.strings in Resources */,
+				D068866717AA60CF002EC90A /* Default.png in Resources */,
+				D068866917AA60CF002EC90A /* Default@2x.png in Resources */,
+				D068866B17AA60CF002EC90A /* Default-568h@2x.png in Resources */,
+				D068867117AA60CF002EC90A /* RTViewController.xib in Resources */,
+				D068868817AA6114002EC90A /* axis-h-arrow.png in Resources */,
+				D068868917AA6114002EC90A /* axis-h-arrow@2x.png in Resources */,
+				D068868A17AA6114002EC90A /* axis-v-arrow.png in Resources */,
+				D068868B17AA6114002EC90A /* axis-v-arrow@2x.png in Resources */,
+				D068868C17AA6114002EC90A /* dotted-h-line.png in Resources */,
+				D068868D17AA6114002EC90A /* dotted-h-line@2x.png in Resources */,
+				D068868E17AA6114002EC90A /* dotted-v-line.png in Resources */,
+				D068868F17AA6114002EC90A /* dotted-v-line@2x.png in Resources */,
+				D068869317AA6114002EC90A /* RTGraphLayoutAxis.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D068864D17AA60CF002EC90A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068866117AA60CF002EC90A /* main.m in Sources */,
+				D068866517AA60CF002EC90A /* RTAppDelegate.m in Sources */,
+				D068866E17AA60CF002EC90A /* RTViewController.m in Sources */,
+				D068869017AA6114002EC90A /* RTGraphCell.m in Sources */,
+				D068869117AA6114002EC90A /* RTGraphLayout.m in Sources */,
+				D068869217AA6114002EC90A /* RTGraphLayoutAxis.m in Sources */,
+				D068869817AA62D9002EC90A /* TimeFormatter.m in Sources */,
+				D068869B17AA6706002EC90A /* RTActivityPoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D068865D17AA60CF002EC90A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D068865E17AA60CF002EC90A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D068866F17AA60CF002EC90A /* RTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D068867017AA60CF002EC90A /* en */,
+			);
+			name = RTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D068867217AA60CF002EC90A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D068867317AA60CF002EC90A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D068867517AA60CF002EC90A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphLayoutDemo/GraphLayoutDemo-Prefix.pch";
+				INFOPLIST_FILE = "GraphLayoutDemo/GraphLayoutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D068867617AA60CF002EC90A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GraphLayoutDemo/GraphLayoutDemo-Prefix.pch";
+				INFOPLIST_FILE = "GraphLayoutDemo/GraphLayoutDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D068864C17AA60CF002EC90A /* Build configuration list for PBXProject "GraphLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D068867217AA60CF002EC90A /* Debug */,
+				D068867317AA60CF002EC90A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D068867417AA60CF002EC90A /* Build configuration list for PBXNativeTarget "GraphLayoutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D068867517AA60CF002EC90A /* Debug */,
+				D068867617AA60CF002EC90A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D068864917AA60CF002EC90A /* Project object */;
+}
